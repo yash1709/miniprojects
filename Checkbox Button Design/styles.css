@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg , #31e0ff , #1d1d64);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.box {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #2d2f30;
+}
+
+.box ul {
+    flex-wrap: wrap;
+}
+
+.box ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 1px 1px 5px rgb(204, 204, 204);
+    margin: 10px 20px;
+    position: relative;
+}
+
+.box input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    opacity: 0;    /* IIIMMMMMMPPPPPPPPPP   */
+    cursor: pointer;
+}
+
+.box li .icon .fas {
+    color: rgb(146, 146, 146);
+    transition: all 0.4s;
+}
+
+.box input:checked ~ .icon .fas {
+    background: linear-gradient(45deg , #31e0ff , #1d1d64);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 0.4s linear;
+}
+
+@keyframes animate {
+    0% , 100% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}

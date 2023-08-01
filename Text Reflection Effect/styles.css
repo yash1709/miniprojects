@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;      /* IMMMPPPPPPPPPP */
+    background: black;
+}
+
+p {
+    font-size: 150px;
+}
+
+.text {
+    color: white;
+}
+
+.reflection {
+    background: linear-gradient(black , rgba(255, 255, 255, 0.3));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 65px;
+}
